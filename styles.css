@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav li {
+    padding: 5px;
+}
+
+/* Add hover effect */
+nav a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600;
+    /* Change to the desired hover color */
+}
+
+nav a::after {
+    content: '';
+    /* Empty content to create the underline */
+    position: absolute;
+    bottom: -2px;
+    /* Adjust the distance of the underline from the text */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Height of the underline */
+    background-color: #007bff;
+   
+    transform: scaleX(0);
+  
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+header {
+    background-color: #333;
+    color: #0adb45;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: ('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffaf5e;
+}
+
+ .services {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+} 
+
+.service {
+    margin: 2rem;
+} 
+
+ .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service p {
+    font-size: 1.2rem;
+    color: #555;
+} 
+
+.image-container {
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.contact {
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    /* Blue color for the border */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-item span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    font-size: 16px;
+    color: #007bff;
+    /* Blue color for the link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: #007bff;
+    /* Blue color on hover */
+    color: #fff;
+    /* White color on hover */
+}
+
+.contact-item:hover a {
+    color: #fff;
+    /* White color on link hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
